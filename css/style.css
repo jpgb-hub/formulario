@@ -1,0 +1,52 @@
+/*CSS document 
+*/
+
+h2 {
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+}
+.form{
+    max-width: 500 px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gray;
+    border: 1 px solid #666666;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #999999;
+}
+
+.form label{    /*selector descendiente */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form input[type ="text"],/*selector descendiente + selector de atributo */
+.form input[type ="email"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.form button.hover {
+    background-color: greenyellow;
+    color: white;
+    box-shadow: 1px 2px 3px black ;
+}
+
+.form small{
+    display: none;
+}
+
+.form input[type ="text"].error +small,
+.form input[type ="email"].error+small,
+.form textarea.error +small {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    border:2px solid red;    
+}
